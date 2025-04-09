@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Toggler</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: white;
+            transition: background-color 0.5s ease;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+        #red {
+            background-color: red;
+            color: white;
+        }
+        #blue {
+            background-color: blue;
+            color: white;
+        }
+        #green {
+            background-color: green;
+            color: white;
+        }
+        #random {
+            background-color: rgb(233, 227, 233);
+            color: rgb(20, 15, 15);
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: lightgray;
+        }
+        button:active {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+<h3>Color Toggler</h3>
+<p>Click the button to toggle the background color between red and blue.</p>
+<button id="red" onclick="setColor('red')">Red</button>
+<button id="blue" onclick="setColor('blue')">Blue</button>
+<button id="green" onclick="setColor('green')">Green</button>
+<button id="random" onclick="randomColor() ">Random</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
